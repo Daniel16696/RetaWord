@@ -1,0 +1,251 @@
+<!-- <ion-row class="borderRespuestaAPregunta">
+    <ion-col col-4>
+      <ion-avatar item-start>
+        <p class="nombresDeLosUsuarios">{{NombreDelUsuario1}}</p>
+        <div class="contenedorDeLaImagen">
+          <img src="/assets/imgs/{{ImagenDelUsuario1}}.png">
+        </div>
+      </ion-avatar>
+    </ion-col>
+    <ion-col col-4 text-center class="totalDeResultado">
+      <p>
+        <span class="contadorDeRepuestasAcertadas">{{ResultadoDelUsuario1}}</span>
+        <span class="palabraTOTAL"> TOTAL </span>
+        <span class="contadorDeRepuestasAcertadas">{{ResultadoDelUsuario2}}</span>
+      </p>
+    </ion-col>
+    <ion-col col-4>
+      <ion-avatar item-start>
+        <p class="nombresDeLosUsuarios">{{NombreDelUsuario2}}</p>
+        <div class="contenedorDeLaImagen">
+          <img src="/assets/imgs/{{ImagenDelUsuario2}}.png">
+        </div>
+      </ion-avatar>
+    </ion-col>
+  </ion-row> -->
+<!--
+  Generated template for the RondasPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color=StyleNaranjaPropio>
+    <ion-title text-center>
+      Resultado Final
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+
+    <ion-row class="borderRespuestaAPregunta">
+      <ion-col col-6>
+        <p class="nombresDeLosUsuarios">{{NombreDelUsuario1}}</p>
+      </ion-col>
+      <ion-col col-6>
+        <p class="nombresDeLosUsuarios">{{NombreDelUsuario2}}</p>
+      </ion-col>
+      <ion-col col-6>
+        <ion-avatar item-start>
+          <div class="contenedorDeLaImagen">
+            <img src="assets/imgs/{{ImagenDelUsuario1}}.png">
+          </div>
+        </ion-avatar>
+      </ion-col>
+      <ion-col col-6>
+        <ion-avatar item-start>
+          <div class="contenedorDeLaImagen">
+            <img src="assets/imgs/{{ImagenDelUsuario2}}.png">
+          </div>
+        </ion-avatar>
+      </ion-col>
+      <ion-col col-12 text-center class="totalDeResultado">
+        <p>
+          <span class="contadorDeRepuestasAcertadas">{{ResultadoDelUsuario1}}</span>
+          <span class="palabraTOTAL"> TOTAL </span>
+          <span class="contadorDeRepuestasAcertadas">{{ResultadoDelUsuario2}}</span>
+        </p>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <h2 class="laPreguntaDada">{{LapreguntaQueSeHaJugadoEs}}</h2>
+  <ion-grid class="contenidoCompleto" no-padding>
+    <ion-col col-6 no-padding>
+      <div padding>
+        <h3 text-center>{{NombreDelUsuario1}}</h3>
+        <ul class="Listado_Ul">
+          <li *ngFor="let item1 of arraygeneral; let n = index">
+            <span class="respuestas" text-left>{{item1.respuesta}}</span>
+            <span class="spanIconos" text-rigth>
+              <ion-icon ios="ios-{{item1.icono}}" md="md-{{item1.icono}}" class="iconos"></ion-icon>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </ion-col>
+    <ion-col col-6 no-padding>
+      <div padding>
+        <h3 class="primerRespuestas" text-center>{{NombreDelUsuario2}}</h3>
+        <ul class="Listado_Ul">
+          <li *ngFor="let item of arraygeneralOtro; let b = index">
+            <span class="respuestas" text-left>{{item.respuestaOtro}}</span>
+            <span class="spanIconos" text-rigth>
+              <ion-icon ios="ios-{{item.iconoOtro}}" md="md-{{item.iconoOtro}}" class="iconos"></ion-icon>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </ion-col>
+  </ion-grid>
+  <ion-grid class="contenidoCompleto2" no-padding>
+    <ion-col col-12 text-center no-padding>
+      <button class="botonRevelarRespuestas" (click)='revelarRespuestas();'>REVELAR RESPUESTAS</button>
+    </ion-col>
+  </ion-grid>
+
+  <!-- <ion-grid class="contenidoCompleto"> -->
+  <!-- <ion-col col-12 text-center>
+    </ion-col> -->
+  <!-- <ion-col col-6 no-padding>
+      <h3>Respuestas de {{NombreDelUsuario1}}</h3>
+      <ul class="Listado_Ul">
+        <li *ngFor="let item1 of arraygeneral; let n = index">
+          <span class="respuestas" text-left>{{item1.respuesta}}</span>
+          <span class="spanIconos" text-rigth>
+            <ion-icon ios="ios-{{item1.icono}}" md="md-{{item1.icono}}" class="iconos"></ion-icon>
+          </span>
+        </li>
+      </ul>
+    </ion-col>
+    <ion-col col-12 text-center no-padding>
+      <button class="botonRevelarRespuestas" (click)='revelarRespuestas();'>REVELAR RESPUESTAS</button>
+    </ion-col> -->
+
+  <!-- </ion-grid> -->
+
+  <!-- <div class="ContenidoDeLasListasDeRespuestas"> -->
+
+  <!-- <div class="contenidoDeLasListas">
+        <ul class="jugadorContrincante">
+          <li class="liOcultadoParaFormatearloMejor">OOOOOOOOOOOOOOOOOOOOOOOOOOOO</li>
+          <li class="textoListadoRespuestasEscritas" *ngFor="let item3 of ARRAYRespuestasEscritasDelUsuario2; let x = index">{{item3}}</li>
+        </ul>
+        <ul class="IconosjugadorContrincante">
+          <li class="liOcultadoParaFormatearloMejor"><ion-icon ios="ios-checkmark" md="md-checkmark"></ion-icon></li>
+          <li *ngFor="let item4 of ARRAYIconosDeRespuestasEscritasDelUsuario2; let z = index">
+            <ion-icon ios="ios-{{item4}}" md="md-{{item4}}" class="textoListadoICONOSEscritas"></ion-icon>
+          </li>
+        </ul>
+      </div> -->
+  <!-- 
+  <h3 class="tituloJugadorDeLaAplicacion">Respuestas de {{NombreDelUsuario1}}</h3>
+  <div class="contenidoDeLasListas">
+    <ul class="jugadorDeLaAplicacion">
+      <li class="liOcultadoParaFormatearloMejor">OOOOOOOOOOOOOOOOOOOOOOOOOOOO</li>
+      <li class="textoListadoRespuestasEscritas2" *ngFor="let item of ARRAYRespuestasEscritasDelUsuario1; let i = index">{{item}}</li>
+    </ul>
+    <ul class="IconosjugadorDeLaAplicacion">
+      <li class="liOcultadoParaFormatearloMejor">
+        <ion-icon ios="ios-checkmark" md="md-checkmark" class="textoListadoICONOSEscritas"></ion-icon>
+      </li>
+      <li *ngFor="let item2 of ARRAYIconosDeRespuestasEscritasDelUsuario1; let j = index">
+        <ion-icon ios="ios-{{item2}}" md="md-{{item2}}" class="textoListadoICONOSEscritas"></ion-icon>
+      </li>
+    </ul>
+  </div> -->
+
+  <!-- </div> -->
+
+  <!-- <div text-center>
+   
+  </div> -->
+  <!-- </div> -->
+
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<div class="contenidoCompleto">
+
+  <div class="ContenidoDeLasListasDeRespuestas">
+    <h3 class="tituloJugadorContrincante">Respuestas de {{NombreDelUsuario2}}</h3>
+    <div class="contenidoDeLasListas">
+      <ul class="jugadorContrincante">
+        <li class="liOcultadoParaFormatearloMejor">OOOOOOOOOOOOOOOOOOOOOOOOOOOO</li>
+        <li class="textoListadoRespuestasEscritas" *ngFor="let item3 of ARRAYRespuestasEscritasDelUsuario2; let x = index">{{item3}}</li>
+      </ul>
+      <ul class="IconosjugadorContrincante">
+        <li class="liOcultadoParaFormatearloMejor"><ion-icon ios="ios-checkmark" md="md-checkmark"></ion-icon></li>
+        <li *ngFor="let item4 of ARRAYIconosDeRespuestasEscritasDelUsuario2; let z = index">
+          <ion-icon ios="ios-{{item4}}" md="md-{{item4}}" class="textoListadoICONOSEscritas"></ion-icon>
+        </li>
+      </ul>
+    </div>
+
+    <h3 class="tituloJugadorDeLaAplicacion">Respuestas de {{NombreDelUsuario1}}</h3>
+    <div class="contenidoDeLasListas">
+      <ul class="jugadorDeLaAplicacion">
+        <li class="liOcultadoParaFormatearloMejor">OOOOOOOOOOOOOOOOOOOOOOOOOOOO</li>
+        <li class="textoListadoRespuestasEscritas2" *ngFor="let item of ARRAYRespuestasEscritasDelUsuario1; let i = index">{{item}}</li>
+      </ul>
+      <ul class="IconosjugadorDeLaAplicacion">
+        <li class="liOcultadoParaFormatearloMejor">
+          <ion-icon ios="ios-checkmark" md="md-checkmark" class="textoListadoICONOSEscritas"></ion-icon>
+        </li>
+        <li *ngFor="let item2 of ARRAYIconosDeRespuestasEscritasDelUsuario1; let j = index">
+          <ion-icon ios="ios-{{item2}}" md="md-{{item2}}" class="textoListadoICONOSEscritas"></ion-icon>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div text-center>
+    <button class="botonRevelarRespuestas" (click)='revelarRespuestas();'>REVELAR RESPUESTAS</button>
+  </div>
+</div> -->

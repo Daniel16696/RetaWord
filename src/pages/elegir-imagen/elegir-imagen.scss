@@ -1,0 +1,46 @@
+page-elegir-imagen {
+
+    .listaImagenes .input-wrapper{
+        display: none;
+    }
+
+    .item {
+        margin-left: auto;
+        margin-right: auto;
+        width: 49.5%;
+    }
+    
+    .button-inner{
+        font-size: 11px;
+    }
+
+    .tituloEligeAvatar{
+        text-align: center;
+        color: #fff;
+        font-family: "Rokkitt";
+        letter-spacing: 1px;
+    }
+
+    .centradoImagen{
+        margin: 0 auto !important;
+        margin-top: 5px !important;
+        margin-bottom: 6px !important;
+    }
+
+    .listaImagenes .item-inner{
+        display: none;
+    }
+
+    .listaImagenes .item-md{
+         padding-left: 0px; 
+         margin-bottom: 1px;
+         margin-left: 1px;
+         float: left;
+    }
+
+    .listaImagenes .item-md ion-thumbnail img {
+        width: 100px;
+        height: 100px;
+    }
+    
+}

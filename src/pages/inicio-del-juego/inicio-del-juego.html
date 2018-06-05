@@ -1,0 +1,42 @@
+<!--
+  Generated template for the InicioDelJuegoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+
+  <ion-navbar>
+    <ion-title text-center>INICIO DEL JUEGO</ion-title>
+  </ion-navbar>
+
+</ion-header> -->
+
+
+<ion-content padding>
+  <!-- <h1 text-center>BIENVENIDOS</h1>
+  <h1 text-center>A</h1>
+  <h1 text-center>RETALANDIA</h1>
+  {{variable}}
+  <ul style="margin-top:50px;">
+    <li text-justify>Este nick será utilizado en todas las secciones del juego, ya que todas las personas te verán con este nick</li>
+    <li text-justify>No puede contener carácteres inapropiados</li>
+    <li text-justify>Que no contenga espacios</li>
+  </ul> -->
+  <form [formGroup]="nicknameUsuario" (ngSubmit)="guardarNicknameUsuario();" style="margin-top:450px;">
+    <ion-list>
+
+      <ion-item>
+        <ion-icon name="nickname" ios="ios-person" md="md-person" item-start class="iconos"></ion-icon>
+        <ion-label stacked>Nickname:</ion-label>
+        <ion-input clearInput formControlName="nickname" type="text" placeholder="Escriba su nickname" maxlength="20"></ion-input>
+      </ion-item>
+
+    </ion-list>
+    <div padding>
+      <button class="boton_aceptar" ion-button block type="submit" [disabled]="!nicknameUsuario.valid">Aceptar</button>
+    </div>
+  </form>
+
+
+</ion-content>

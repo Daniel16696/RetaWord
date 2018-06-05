@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar color=StyleNaranjaPropio>
+    <ion-title text-center>
+      PERFIL
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- <ion-refresher (ionRefresh)="doRefresh($event);">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher> -->
+  <div>
+    <h1 text-center class="nombreDeUsuario">{{nombreDelUsuario}}</h1>
+    <!-- Imagen del usuario centrada -->
+    <ion-avatar text-center>
+      <img (click)="cambiarImagenAsociada();" style="margin:0 auto;" src="assets/imgs/{{imagenAsociadaAlUsuario}}.png">
+    </ion-avatar>
+    <!-- Termina la Imagen del usuario centrada -->
+
+    <!-- Contenido de las estadisticas del usuario  -->
+    <div>
+      <ion-icon ios="ios-stats" md="md-stats" class="icono"> <span class="titulo_resultados">Estadísticas</span></ion-icon>
+    </div>
+    <br>
+    <div text-center>
+      <button ion-button round class="boton_fondo"><span class="botones_Infomacion"><span class="tamaño_numero">{{victoriasDeRondasDeLUsuario}}</span> Victorias</span></button>
+      <button ion-button round class="boton_fondo"><span class="botones_Infomacion"><span class="tamaño_numero">{{derrotasDeRondasDeLUsuario}}</span> Derrotas</span></button>
+      <button ion-button round class="boton_fondo"><span class="botones_Infomacion"><span class="tamaño_numero">{{victoriaDePorcentajeDelUsuario}}</span> % de Victoria</span></button>
+    </div>
+    <!-- Termina el Contenido de las estadisticas del usuario  -->
+    <br>
+    <!-- Contenido de la clasificacion que tiene el usuario -->
+    <div class="contenedor_clasificacion">
+      <ion-icon ios="ios-trophy" md="md-trophy" class="icono"> <span class="titulo_clasificacion">Clasificación</span></ion-icon>
+    </div>
+    <ion-item class="contenedor_ranking"> 
+      <ion-avatar item-start>
+        <img src="assets/imgs/{{imagenAsociadaAlUsuario}}.png">
+      </ion-avatar>
+      <h2 class="titulo_ranking_general">Ranking general:
+        <span text-center> {{posicionRanking}}º</span>
+      </h2>
+      <!-- Termina el Contenido de la clasificacion que tiene el usuario -->
+
+
+    </ion-item>
+  </div>
+</ion-content>

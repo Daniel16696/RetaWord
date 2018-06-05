@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar color=StyleNaranjaPropio>
+    <ion-title text-center>
+      CONFIGURACIÓN
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <!-- <ion-refresher (ionRefresh)="doRefresh($event);">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher> -->
+  <div>
+    <!-- Empieza la lista de las opciones de configuracion que tiene cada cuenta -->
+    <ion-list no-border>
+
+      <ion-list-header text-center class="titulo_opciones">
+        OPCIONES
+      </ion-list-header>
+
+      <ion-item>
+        <ion-icon ios="ios-create" md="md-create" item-start class="iconos"></ion-icon>
+        <ion-label (click)="cambiarNombreUsuario();" class="textos_custom">Editar nickname</ion-label>
+      </ion-item>
+
+      <!-- <ion-item>
+        <ion-icon ios="ios-musical-note" md="md-musical-note" item-start></ion-icon>
+        <ion-label>Sonido</ion-label>
+        <ion-toggle checked="true"></ion-toggle>
+      </ion-item> -->
+
+      <ion-item>
+        <ion-icon ios="ios-trash" md="md-trash" item-start class="iconos"></ion-icon>
+        <!-- <ion-icon ios="ios-power" md="md-power" item-start></ion-icon> -->
+        <ion-label (click)="borrarCuenta();" class="textos_custom">Eliminar cuenta</ion-label>
+      </ion-item>
+
+    </ion-list>
+    <!-- Termina la lista de las opciones de configuracion que tiene cada cuenta -->
+    <!-- Empieza la lista del contacto con nosotros de configuracion que tiene cada cuenta -->
+    <ion-list no-border>
+
+      <ion-list-header text-center class="titulo_contacto">
+        CONTACTO
+      </ion-list-header>
+
+      <ion-item (click)="sugerirCategoria();">
+        <ion-label class="textos_custom"> Sugerir Categoría</ion-label>
+        <ion-icon ios="ios-bulb" md="md-bulb" item-start class="iconos"></ion-icon>
+      </ion-item>
+
+      <ion-item (click)="contactanos();">
+        <ion-icon ios="ios-contacts" md="md-contacts" item-start class="iconos"></ion-icon>
+        <!-- <ion-icon ios="ios-help" md="md-help" item-start></ion-icon> -->
+        <ion-label class="textos_custom">Contáctanos</ion-label>
+      </ion-item>
+
+    </ion-list>
+    <!-- Termina la lista del contacto con nosotros de configuracion que tiene cada cuenta -->
+  </div>
+</ion-content>

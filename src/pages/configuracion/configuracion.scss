@@ -1,0 +1,48 @@
+page-configuracion {
+
+    .titulo_opciones {
+       font-family: "Rokkitt";
+        font-weight: 700;
+        font-size: 1.4em;
+        color: #333;
+        letter-spacing: 2px;
+    }
+
+    .titulo_contacto {
+       font-family: "Rokkitt";
+        margin-top: 10px !important;
+        font-weight: 700;
+        font-size: 1.4em;
+        color: #333;
+        letter-spacing: 2px;
+    }
+
+    .list-header-md {
+        margin-bottom: 2px;
+    }
+
+    .iconos{
+        font-size: 32px;
+        color: #420039;
+    }
+
+    .textos_custom{
+        font-size: 1.2em;
+        font-weight: 500;
+        color: #420039;
+        font-family: "Rokkitt";
+        letter-spacing: 2px;
+    }
+
+    ion-alert .alert-wrapper{
+        background: rgba(66,0,57,1);
+        background: -moz-linear-gradient(top, rgba(66,0,57,1) 0%, rgba(184,123,177,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(66,0,57,1)), color-stop(100%, rgba(184,123,177,1)));
+        background: -webkit-linear-gradient(top, rgba(66,0,57,1) 0%, rgba(184,123,177,1) 100%);
+        background: -o-linear-gradient(top, rgba(66,0,57,1) 0%, rgba(184,123,177,1) 100%);
+        background: -ms-linear-gradient(top, rgba(66,0,57,1) 0%, rgba(184,123,177,1) 100%);
+        background: linear-gradient(to bottom, rgba(66,0,57,1) 0%, rgba(184,123,177,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#420039', endColorstr='#b87bb1', GradientType=0 );
+    }
+    
+}

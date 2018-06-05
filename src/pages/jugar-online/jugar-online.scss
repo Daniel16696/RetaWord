@@ -1,0 +1,60 @@
+page-jugar-online {
+
+    .item-md {
+       padding-left: 0px !important; 
+    }
+
+    .borderTituloPregunta{
+        border:2px solid #E67F0D;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .borderRespuestaAPregunta{
+        border: 1px solid #e67f0d;
+        font-size: 1.35em;
+        background-color: #ffc857;
+    }
+
+    .tabbar {
+        display:none;
+    }
+
+    .preguntaDeLaPartida{
+        color: #fff;
+        font-size: 1em;
+        font-family: "Rokkitt";
+    }
+
+    #botonRespuestas{
+    color: #333;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 1px;
+    margin: 1px;
+    }
+
+    .respuestasDelUsuario{
+        color:#fff;
+    }
+
+    .icono{
+        font-size: 1.4em;
+        color: #e67f0d;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+    }
+
+    .progress-bar{
+        background-color: #ab6ea4 !important;
+    }
+    
+    .toolbar-content{
+        height: 30px;
+    }
+
+
+}

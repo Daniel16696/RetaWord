@@ -1,0 +1,20 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/bootstrap/bootstrap2.min.css">
+  <script src="/assets/bootstrap/jquery-3.3.1.min.js"></script>
+  <script src="/assets/bootstrap/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+</head>
+<div class="progress" style="height:30px;">
+  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+    [style.width]="loadProgress + '%'">
+    <span style="height: 90px; line-height: 30px; text-align: center; font-size:20px; color:#333; font-weight:bolder;">{{loadProgressTime}} s</span>
+  </div>
+</div>
+<!-- <div class="progress-outer" float-left>
+  <div class="progress-inner" [style.width]="loadProgress + '%'"></div>
+</div>
+<div float-right>{{loadProgressTime}} s</div> -->

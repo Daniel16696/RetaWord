@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar color=StyleNaranjaPropio>
+    <ion-title text-center>
+      Cambiar imagen
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <h2 class="tituloEligeAvatar">Elige un avatar</h2>
+  <ion-list class="listaImagenes">
+    <ion-item *ngFor="let item of imagenesDisponiblesParaElUsuario; let i = index" (click)="EscogerImagen(item.nombreDeLaFoto)">
+      <ion-thumbnail item-start class="centradoImagen">
+        <img src="assets/imgs/{{item.nombreDeLaFoto}}.png">
+      </ion-thumbnail>
+      <!-- <br>
+      <button ion-button clear item-end>Elegir</button> -->
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,94 @@
+page-rondas {
+
+    .totalDeResultado{
+        color: #fff;
+        font-family: "HeroesLegend";
+        padding-bottom: 0px;
+    }
+
+    .contenidoCompleto{
+        -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0,0,0,0.4);
+        -moz-box-shadow: inset 0px 0px 10px 2px rgba(0,0,0,0.4);
+        box-shadow: inset 0px 0px 10px 2px rgba(0,0,0,0.4);
+        background-color: #ffc857;
+        flex-direction: initial;
+        padding-bottom: 10px !important;
+    }
+    // .contenidoCompleto2{
+    //     -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0,0,0,0.4);
+    //     -moz-box-shadow: inset 0px 0px 10px 2px rgba(0,0,0,0.4);
+    //     box-shadow: inset 0px 0px 10px 2px rgba(0,0,0,0.4);
+    //     background-color: #ffc857;
+    //     // flex-direction: initial;
+    //     padding-bottom: 10px !important;
+    // }
+
+    // .respuestas{
+    //     padding-left: 30px;
+    // }
+
+    .iconos{
+        float: right;
+        // padding-right: 30px;
+    }
+
+    // .primerRespuestas{
+    //     padding-top: 10px;
+    // }
+
+    .Listado_Ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        // padding-bottom: 12px;
+    }
+
+    .laPreguntaDada{
+        text-align: center;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+        color: #fff;
+        font-family: "Rokkitt";
+        font-size: 1.5em;
+        letter-spacing: 1px;
+        margin-top: 0px;
+
+    }
+
+    .botonRevelarRespuestas{
+        border-radius: 14px 14px 14px 14px;
+        -moz-border-radius: 14px 14px 14px 14px;
+        -webkit-border-radius: 14px 14px 14px 14px;
+        background-color: #BA7EA5;
+        padding: 25px;
+        margin-top: 20px;
+        font-size: 1.4em;
+        font-family: "Rokkitt";
+    }
+
+    .nombresDeLosUsuarios{
+        text-align: center;
+        color: #ffffff;
+        font-family: "Rokkitt";
+        font-size: 1.6em;
+        letter-spacing: 1px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .alert-wrapper .alert-head .alert-title {
+        font-size: 16px !important;
+    }
+
+    .alert-wrapper .alert-message .listadoRespuestasReveladas{
+        margin: 0px !important;
+        padding: 0 !important;
+        list-style: none !important;
+    }
+
+    ion-avatar img, ion-thumbnail img {
+        width: 100px;
+        margin: 0 auto;
+    }
+    
+}

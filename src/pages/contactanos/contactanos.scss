@@ -1,0 +1,30 @@
+page-contactanos {
+
+    .boton_enviar{
+        border-radius: 14px 14px 14px 14px;
+        -moz-border-radius: 14px 14px 14px 14px;
+        -webkit-border-radius: 14px 14px 14px 14px;
+        background-color: #BA7EA5;
+        padding: 30px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .iconos{
+        font-size: 27px;
+        color: #420039;
+    }   
+
+    ion-input, 
+    ion-textarea{
+        font-family: monospace; 
+        font-size: 1em !important;
+    }
+    
+    ion-label{
+        font-family: monospace; 
+        font-size: 1.25em !important;
+        color: #420039 !important;
+    }
+
+}

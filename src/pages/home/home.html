@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-navbar color=StyleNaranjaPropio>
+    <ion-title text-center>GANAR O PERDER</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+
+
+  <div id="contenedor" [ngStyle]="{'display': cargando }">
+    <div id="contenedor" [ngStyle]="{'display': cargando }">
+      <!-- <div>Buscando partida :{{contadorDeBuscadorAtras}}</div> -->
+      <div class="loader" id="loader">Loading...</div>
+    </div>
+    <div text-center class="esperandoJugador">Esperando a otro jugador</div>
+  </div>
+  <!-- <div style="height:220px;"></div> -->
+
+  <!-- Empieza la seccion de las ultimas partidas -->
+  <div [ngStyle]="{'display': cargandoFinalizadas }">
+    <div class="contenedor_finalizadas">
+      <ion-icon ios="ios-game-controller-b" md="md-game-controller-b" style="font-size:25px;" class="icono">
+        <span class="texto_de_partidas_finalizadas">Últimas partidas</span>
+      </ion-icon>
+    </div>
+    <!-- Lista de las tres últimas partidas para mostrarle al usuario -->
+    <ion-list>
+      <!-- Primer item -->
+      <ion-item *ngFor="let item of ultimasTresPartidasSacadas; let i = index">
+        <ion-avatar item-start>
+          <img src="assets/imgs/{{item.imagenUsuarioContrincante}}.png">
+        </ion-avatar>
+        <h2 class="texto_custom">{{item.nicknameUsuarioContrincante}}</h2>
+        <p class="texto_custom">{{item.EstadoDePartida}}: {{item.PalabraDelEstadoDeLaPartida}} {{item.ContadorDelUsuarioAplicacion}} - {{item.ContadorDelUsuarioContrincante}}</p>
+        <!-- <button ion-button clear item-end> -->
+        <!-- <ion-icon ios="ios-arrow-dropright" md="md-arrow-dropright" style="font-size:55px;" color=StyleAzulPropio></ion-icon> -->
+        <!-- </button> -->
+      </ion-item>
+    </ion-list>
+  </div>
+  <!-- Segundo item -->
+  <!-- <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/imagen0.png">
+      </ion-avatar>
+      <h2 class="texto_custom">Nombre de Usuario</h2>
+      <p class="texto_custom">VICTORIA: Ganaste 2 - 1</p>
+      <button ion-button clear item-end> -->
+  <!-- <ion-icon ios="ios-arrow-dropright" md="md-arrow-dropright" style="font-size:55px;" color=StyleAzulPropio></ion-icon> -->
+  <!-- </button>
+    </ion-item> -->
+  <!-- Tercer item -->
+  <!-- <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/imagen0.png">
+      </ion-avatar>
+      <h2 class="texto_custom">Nombre de Usuario</h2>
+      <p class="texto_custom">VICTORIA: Ganaste 3 - 0</p>
+      <button ion-button clear item-end> -->
+  <!-- <ion-icon ios="ios-arrow-dropright" md="md-arrow-dropright" style="font-size:55px;" color=StyleAzulPropio></ion-icon> -->
+  <!-- </button>
+    </ion-item> -->
+  <!-- </ion-list> -->
+  <!-- Termina la seccion de las ultimas partidas -->
+
+  <div>
+    <button ion-button full class="principales_botones" [ngStyle]="{'display': invisibleElBotonDeJugar }" (click)="jugarOnline();">
+      <span class="botones_Infomacion"> Jugar</span>
+    </button>
+    <!-- <ion-icon ios="ios-add" md="md-add" (click)="jugarOnline();" class="icono"></ion-icon> -->
+  </div>
+  <div>
+    <button ion-button full class="principales_botones" [ngStyle]="{'display': invisibleElBotonDeCancelar }" (click)="cancelarOnline();">
+      <span class="botones_Infomacion"> Cancelar Partida</span>
+    </button>
+    <!-- <ion-icon ios="ios-add" md="md-add" (click)="cancelarOnline();" class="icono"></ion-icon> -->
+  </div>
+</ion-content>

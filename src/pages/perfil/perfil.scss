@@ -1,0 +1,63 @@
+page-perfil {
+
+    .nombreDeUsuario{
+        color: #fff;
+        font-size: 1.6em;
+        font-family: "Rokkitt";
+        letter-spacing: 1px;
+    }
+
+    .titulo_resultados{
+        color: #fff;
+        font-size: 0.65em;
+        font-family: "Rokkitt";
+        letter-spacing: 1px;
+    }
+
+    .titulo_clasificacion{
+        color: #fff;
+        font-size: 0.65em;
+        font-family: "Rokkitt";
+        letter-spacing: 1px;
+    }
+
+    .contenedor_clasificacion{
+        margin-bottom: 20px;
+    }
+
+    .icono{
+        color: #fff;
+        font-size: 34px;
+    }
+
+    .boton_fondo{
+        background-color: #BA7EA5;
+    }
+
+    .botones_Infomacion{
+        font-family: "Rokkitt";
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.2em;
+    }
+
+    .tamaño_numero {
+        font-family: "Rokkitt";
+        font-size: 18px;
+    }
+
+    .titulo_ranking_general{
+        font-size: 1.3em;
+        color: #420039;
+        font-weight: 700;
+        text-align: left;
+        font-family: "Rokkitt";
+        margin-bottom: 10px !important;
+        margin-top: 10px !important;
+    }
+
+    .contenedor_ranking{
+        height: 70px;
+    }
+    
+}

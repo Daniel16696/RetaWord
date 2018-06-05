@@ -1,0 +1,40 @@
+<ion-header>
+
+  <ion-navbar color=StyleNaranjaPropio>
+    <ion-title text-center>
+      CONTÁCTANOS
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form [formGroup]="formularioContactanos" (ngSubmit)="guardarConsultaDeContactanos()">
+    <ion-list>
+
+      <ion-item>
+        <ion-icon ios="ios-person" md="md-person" item-start class="iconos"></ion-icon>
+        <ion-label stacked>Contacta con nosotros:</ion-label>
+        <ion-input formControlName="name" type="text" placeholder="Nombre"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon ios="ios-mail" md="md-mail" item-start class="iconos"></ion-icon>
+        <ion-label stacked>Correo electronico:</ion-label>
+        <ion-input formControlName="email" type="email" placeholder="Email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon ios="ios-text" md="md-text" item-start class="iconos"></ion-icon>
+        <ion-label stacked>Tu comentario:</ion-label>
+        <ion-textarea cols="45" rows="9" formControlName="comentario" placeholder="Escriba su comentario"></ion-textarea>
+      </ion-item>
+
+    </ion-list>
+    <div padding>
+      <button class="boton_enviar" ion-button block type="submit" [disabled]="!formularioContactanos.valid">Enviar</button>
+    </div>
+  </form>
+
+</ion-content>
